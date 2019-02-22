@@ -13,6 +13,27 @@
   src: url("../fonts/RobotoBold/RobotoBold.eot");
   src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"); }
 
+@font-face {
+  font-family: "LatoRegular";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/LatoRegular/Lato-Regular.eot");
+  src: url("../fonts/LatoRegular/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoRegular/Lato-Regular.woff") format("woff"), url("../fonts/LatoRegular/Lato-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "LatoBold";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/LatoBold/Lato-Bold.eot");
+  src: url("../fonts/LatoBold/Lato-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoBold/Lato-Bold.woff") format("woff"), url("../fonts/LatoBold/Lato-Bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "LatoLight";
+  font-weight: 300;
+  font-style: normal;
+  src: url("../fonts/LatoLight/Lato-Light.eot");
+  src: url("../fonts/LatoLight/Lato-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/LatoLight/Lato-Light.woff") format("woff"), url("../fonts/LatoLight/Lato-Light.ttf") format("truetype"); }
+
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
@@ -64,12 +85,41 @@ body {
   text-align: center; }
 
 ::-moz-selection {
-  background-color: orange;
+  background-color: #D0AC1A;
   color: #fff; }
 
 ::selection {
-  background-color: orange;
+  background-color: #D0AC1A;
   color: #fff; }
+
+header {
+  top: 0; }
+
+.logo {
+  display: inline-block;
+  font-family: LatoBold;
+  border: 2px solid #000;
+  margin: 20px;
+  padding-right: 10px;
+  padding-left: 10px; }
+  .logo h2 {
+    margin: 0;
+    color: #000; }
+
+nav {
+  position: relative;
+  float: right;
+  margin-top: 7px; }
+  nav ul li {
+    display: inline;
+    margin: 15px; }
+    nav ul li a {
+      display: inline-block;
+      color: #000;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-family: LatoBold, sans-serif;
+      letter-spacing: 2px; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

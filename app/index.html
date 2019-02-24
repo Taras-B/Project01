@@ -24,21 +24,24 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
-	<link rel="stylesheet" href="css/libs.min.css">
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/libs.css">
+	
 	<link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
 
-	<header>
+	<header>   <!-- Create header -->
 		<div class="container">
 			<div class="row">
 				<div class="logo">
 					<h2>LOGO</h2>
 				</div>
-
-				<nav>
+	
+				<nav class="mtoggle">
 					<ul>
 						<li><a href="#">Main</a></li>
 						<li><a href="#">Demos</a></li>
@@ -47,12 +50,206 @@
 						<li><a href="#">Shortcodes</a></li>
 					</ul>
 				</nav>
+
+			<a id="hamburger-icon" href="#" title="Menu">
+				<span class="line line-1"></span>
+ 				<span class="line line-2"></span>
+ 				<span class="line line-3"></span>
+			</a>
+ 
 			</div>
 		</div>
-	</header>
+	</header> <!-- End Header -->
+
+	<!-- Create Section jumbotron -->
+	<section class="jumbo" style="background-image: url(img/bg1.jpg)">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 col-lg-offset-1 section-theme">
+					<h1 class="section-theme__main">Lorem ipsum</h1>
+					<h1 class="section-theme__other">Lorem ipsum dolor.</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Create section Save Time -->
+	<section class="save-time">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-1">
+					<div class="save-time__title"><h2>You Will Save Time and Effort</h2></div>
+					<div class="save-time__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odit quia, a accusantium optio earum soluta vero rem ullam excepturi explicabo ipsam at nihil sapiente inventore.</p></div>
+				</div>
+				<div class="col-lg-3 col-md-12 col-lg-offset-1">
+					<a href="#" class="save-time__btn btn">purchase now</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<!-- End Save Time -->
+
+<!-- Create Breaking News -->
+	<section class="breaking-news">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 breaking-news__top">
+					<h1>Breaking News</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit aliquam voluptatibus, reiciendis enim nobis impedit.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4 col-md-12">
+					<div class="img-news">
+						<img src="img/bg2.jpg" alt="News">
+						<div class="img-news__text">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+					<div class="img-news">
+						<img src="img/bg3.jpg" alt="News">
+						<div class="img-news__text">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4 col-md-12">
+
+					<div class="img-news">
+						<img src="img/bg4.jpg" alt="News">
+						<div class="img-news__text">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+					<div class="img-news">
+						<img src="img/bgw1.jpg" alt="News">
+						<div class="img-news__text">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+				</div>
+				<div class="col-lg-4 col-md-12">
+					
+					<div class="img-news">
+						<img src="img/bg1.jpg" alt="News">
+						<div class="img-news__text">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+					<div class="img-news">
+						<img src="img/bg2.jpg" alt="News">
+						<div class="img-news__text">
+							<h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-sm-7 col-xs-offset-3 col-sm-offset-4 col-lg-offset-5 content-news">
+					<a href="#" class="breaking-news__btn btn">load more post</a>
+				</div>
+			</div>
+		</div>
+	</section>
+<!-- End Breaking News -->
+<!-- Create section with gallery -->
+	<section class="project-gallery">
+		
+			<div class="h100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							
+							<div class="fotorama"
+						     data-width="100%"
+						     data-ratio="800/600"
+						     data-minwidth="310"
+						     data-maxwidth="1000"
+						     data-minheight="300"
+						     data-maxheight="100%"
+						     data-loop="true"
+						     data-autoplay="true"
+						     data-fit="cover"
+						     data-keyboard="true"
+						     >
+						 			 <img src="img/bg1.jpg">
+						 			 <img src="img/bg2.jpg">
+						 			 <img src="img/bg3.jpg">
+						 			 <img src="img/bg4.jpg">
+						</div>
+
+						</div>
+						<div class="col-md-6 project-gallery__all">
+							
+							<div class="project-gallery__top">
+								<h2>Project Gallery</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam magni et explicabo. Quod assumenda, harum nam doloremque sunt, officia at! Dolorem libero dolore quis, necessitatibus saepe. Quisquam illum, rerum molestiae!</p>
+							</div>
+
+							<div class="project-gallery__midlle">
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="project-gallery__midlle-text">
+										<h3><i class="fas fa-power-off"></i>Awasome Portfolio</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ea quo amet, voluptates in. Repudiandae.</p>
+									</div>
+									
+									</div>
+									<div class="col-sm-6">
+										<div class="project-gallery__midlle-text">
+										<h3><i class="fas fa-pen-square"></i>Google Fonts</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ea quo amet, voluptates in. Repudiandae.</p>
+									</div>
+									</div>
+								</div>
+
+								<div class="row">
+									<div class="col-sm-6">
+										<div class="project-gallery__midlle-text">
+										<h3><i class="fas fa-external-link-square-alt"></i>Creative Ideas</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ea quo amet, voluptates in. Repudiandae.</p>
+									</div>
+									
+									</div>
+									<div class="col-sm-6">
+										<div class="project-gallery__midlle-text">
+										<h3><i class="fas fa-bell"></i>AJAX Transitions</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ea quo amet, voluptates in. Repudiandae.</p>
+									</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+	</section>
+
+<!-- End Gallery -->
+
+
 
 
 	<script src="js/scripts.min.js"></script>
+	<script src="js/libs.min.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
 </html>

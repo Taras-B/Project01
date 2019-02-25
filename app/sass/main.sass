@@ -288,19 +288,21 @@ section.jumbo
 		border-radius: 7px
 
 
+//*************** Project Gallery********
 
 .project-gallery
 	position: relative
 	top: 40px
+	// padding-bottom: 60px
 	.h100
 		width: 100vw
-		height: 100vh
+		height: 100%
+		padding-bottom: 60px
 		background-color: $accent
 
 .fotorama
 	position: relative
-	top: 200px
-
+	top: 70px
 
 .fotorama__arr
 	&--next
@@ -318,7 +320,6 @@ section.jumbo
 			font-size: 32px
 			color: #fff 
 
-//*************** Project Gallery********
 
 .project-gallery
 	&__top
@@ -334,5 +335,104 @@ section.jumbo
 			padding-right: 5px
 
 
+// ********The Team******
+.team
+	position: relative
+	top: 60px
+	&-heading
+		display: flex
+		flex-direction: column
+		text-align: center
+		justify-content: center
+		h1
+			text-transform: uppercase
+			margin-top: 40px
+		p
+			margin-top: 0
+			margin-bottom: 30px
+	&-items
+		display: flex
+		margin-bottom: 40px
+		&__img
+			position: relative
+			width: 200px
+			height: 200px
+			overflow: hidden
+			border-radius: 50%
+			img
+				width: 100%
+				height: auto
+				margin: 0 auto
+				background-size: cover
+		&__social
+			text-align: center
+			i
+				padding: 7px
+				margin: 12px 8px
+				background-color: $accent
+				border-radius: 50%
+				color: #fff	
+			.fa-facebook-f
+				padding: 7px 11px
+		&__text
+			margin-left: 30px
 
-@import "media" // Всегда в конце
+
+// ******* Contact Us and Google maps****
+
+.contact-us
+	position: relative
+	top: 80px
+	&__header
+		display: flex
+		flex-direction: column
+		text-align: center
+		justify-content: center
+		margin-bottom: 50px
+		h1
+			margin-bottom: 0
+	&__bottom-header
+		display: flex
+		flex-direction: column
+		text-align: center
+		justify-content: center
+		margin-bottom: 50px
+		h1
+			margin-bottom: 0
+	&__bottom-form .form-group 
+		position: relative
+		// display: block
+		margin-bottom: 20px
+		label
+			position: absolute
+			// display: inline
+			color: #000
+			letter-spacing: 2px
+			top: 0
+			left: 17px
+			padding: 10px 0
+			font-size: 16px
+			pointer-events: none
+			transition: .5s
+		.form-control
+			// background: transparent
+			// border: none
+			border: 2px solid rgba($accent, 0.2)
+			height: 50px
+			width: 400px
+			border-radius: 20px
+			background: rgba(226, 225, 225, 0.1)
+			font-size: 2rem
+			&:focus, &:hover
+				border: none
+				box-shadow: none
+			&:focus ~ .lbl, &:valid label
+				display: none
+				font-size: 4rem
+
+
+
+
+
+
+@import "media" // Всегда в конце`

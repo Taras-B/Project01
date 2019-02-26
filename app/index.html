@@ -18,11 +18,11 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#000">
+	<meta name="theme-color" content="#FEC174">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#000">
+	<meta name="msapplication-navbutton-color" content="#FEC174">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#FEC174">
 
 	
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
@@ -66,8 +66,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-lg-offset-1 section-theme">
-					<h1 class="section-theme__main">Lorem ipsum</h1>
-					<h1 class="section-theme__other">Lorem ipsum dolor.</h1>
+					<h1 class="section-theme__main">Be Creative</h1>
+					<h1 class="section-theme__other">Website builder</h1>
 				</div>
 			</div>
 		</div>
@@ -81,7 +81,7 @@
 					<div class="save-time__title"><h2>You Will Save Time and Effort</h2></div>
 					<div class="save-time__text"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit odit quia, a accusantium optio earum soluta vero rem ullam excepturi explicabo ipsam at nihil sapiente inventore.</p></div>
 				</div>
-				<div class="col-lg-3 col-md-12 col-lg-offset-1">
+				<div class="col-lg-3 col-md-12 col-lg-offset-1 btnst">
 					<a href="#" class="save-time__btn btn">purchase now</a>
 				</div>
 
@@ -177,10 +177,6 @@
 							<div class="fotorama"
 						     data-width="100%"
 						     data-ratio="800/600"
-						     data-minwidth="310"
-						     data-maxwidth="1000"
-						     data-minheight="300"
-						     data-maxheight="100%"
 						     data-loop="true"
 						     data-autoplay="true"
 						     data-fit="cover"
@@ -365,22 +361,21 @@
 						<form>
 							 <div class="col-md-6">
 							 	<div class="form-group">
-                           <label class="lbl">Name</label>
-                           <input type="text" name="" class="form-control">
+                           <!-- <label class="lbl">Name</label> -->
+                           <input type="text" name="" placeholder="Name" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label>Email</label>
-                            <input type="text" name="" class="form-control">
+                            <!-- <label>Email</label> -->
+                            <input type="email" name="" placeholder="Email" autocomplete="off" class="form-control">
                         </div>
                       <div class="form-group">
-                          <label>Phone</label>
-                         <input type="text" name="" class="form-control">
+                          <!-- <label>Phone</label> -->
+                         <input type="text" name="" placeholder="Phone" class="form-control">
                       </div>
 							 </div>
                 <div class="col-md-6">
                      	 <div class="form-group">
-                            <label>Massege</label>
-                            <textarea class="form-control textarea" name="" cols="30""></textarea>
+                            <textarea class="form-control textarea" name="" placeholder="Message" cols="30""></textarea>
                       </div>
                      <div class="form-group text-center">
                         <button class="btn btn-secondary btnD1">Send</button>
@@ -394,8 +389,42 @@
 		</div>
 </section>
 
+<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-4 footer-phone">
+				<p><i class="fas fa-phone"></i></p>
+				<p>333 222 111 00</p>
+				<p>00 000 0000</p>
+			</div>
+			<div class="col-sm-4 footer-mail">
+				<p><i class="far fa-envelope"></i></p>
+				<p>taras5475@gmail.com</p>
+				<p>email@mail.com</p>
+			</div>
+			<div class="col-sm-4 footer-marker">
+				<p><i class="fas fa-map-marker-alt"></i></p>
+				<p>99 Bernard St - Suite 111</p>
+				<p>United States - GA</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 footer-copyrit">
+				<ul class="footer-copyrit__social">
+            <li><a href="https://www.facebook.com/profile.php?id=100005270807942"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/taras-butsiak-370aa117a/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/Taras-B"><i class="fab fa-github"></i></a></li>
+         </ul>
+				<p class="cpryt">&copy Copyright 2019 Nature | Temlate by <a href="https://www.linkedin.com/in/taras-butsiak-370aa117a/">Taras Butsiak</a></p>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Footer End  [:)] -->
 	
-	
+	<div class="top-btn" title="Наверх"><i class="fas fa-angle-double-up"></i></div>
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/libs.min.js"></script>

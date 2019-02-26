@@ -68,7 +68,7 @@ body
 		text-transform: uppercase
 		font-weight: 600
 		letter-spacing: 3px
-		border-radius: 2px
+		border-radius: 20px
 		text-align: center
 		position: relative
 		margin-top: 70px
@@ -79,7 +79,7 @@ body
 			transition: background-color .2s ease
 			position: absolute
 			content: ''
-			height: 4px
+			height: 0px
 			bottom: 0
 			width: 100%
 			background-color: darken($accent, 50%)
@@ -102,7 +102,6 @@ body
 header
 	// position: relative
 	top: 0
-	// background-color: rgba(243,226,199,1)
 
 .logo
 	display: inline-block
@@ -190,7 +189,7 @@ section.jumbo
 		height: 80vh
 		position: absolute
 		z-index: 1
-		background-color: rgba($accent, 0.3)
+		background-color: rgba($accent, 0.5)
 
 .section-theme
 	position: absolute
@@ -213,6 +212,8 @@ section.jumbo
 		font-size: 2.5rem
 		padding: 0
 		margin: 0
+	.btnst
+		text-align: center
 	&__btn
 		display: inline-block
 		border: none
@@ -225,7 +226,6 @@ section.jumbo
 		font-weight: 600
 		letter-spacing: 3px
 		border-radius: 2px
-		text-align: center
 		position: relative
 		margin-top: 70px
 		outline: none
@@ -259,7 +259,8 @@ section.jumbo
 
 .breaking-news
 	&__top
-		display: grid
+		display: flex
+		flex-direction: column
 		text-align: center
 		p
 			margin: 0
@@ -401,8 +402,13 @@ section.jumbo
 			margin-bottom: 0
 	&__bottom-form .form-group 
 		position: relative
-		// display: block
 		margin-bottom: 20px
+		input::placeholder
+			color: rgba($accent, 0.4)
+			padding-left: 10px
+		textarea::placeholder
+			color: rgba($accent, 0.4)
+			padding-left: 10px
 		label
 			position: absolute
 			// display: inline
@@ -415,7 +421,7 @@ section.jumbo
 			pointer-events: none
 			transition: .5s
 		.form-control
-			// background: transparent
+			background: transparent
 			// border: none
 			border: 2px solid rgba($accent, 0.2)
 			height: 50px
@@ -426,9 +432,56 @@ section.jumbo
 			&:focus, &:hover
 				border: none
 				box-shadow: none
-			&:focus ~ .lbl, &:valid label
-				display: none
-				font-size: 4rem
+.footer
+	position: relative
+	top: 90px
+	width: 100vw
+	background-color: $accent
+	&-phone, &-mail, &-marker
+		text-align: center
+		margin: 20px auto
+		p
+			font-size: 2rem
+	&-copyrit
+		text-align: center
+		&__social
+			display: flex
+			justify-content: center
+			list-style: none
+			li
+				margin: 10px 30px
+				a
+					color: #000
+					font-size: 2.3rem
+					padding: 7px 10px
+					transition: 0.5s
+					&:hover
+						color: #fff
+						background-color: $blue
+						border-radius: 50%
+
+.top-btn
+	position: fixed
+	bottom: 20px
+	right: -100px
+	background-color: $blue
+	z-index: 15
+	border-radius: 10rem
+	color: #fff
+	font-size: 26px
+	width: 50px
+	height: 50px
+	text-align: center
+	line-height: 50px
+	cursor: pointer
+	transition: all .4s ease
+	opacity: .5
+	&:hover
+		opacity: 1
+	&.active
+		right: 25px
+	
+
 
 
 
